@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html, body {
+    height: 100%;
+    background-color: #FFF8E1;
+}
+
+@font-face {
+  font-family: 'DS-Digital';
+  src: url('../fonts/DS-DIGI.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Light.ttf') format('truetype');
+}
+
+
+
+#clock {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    position: relative;
+    background-color: #212121;
+    height: 40vw;
+    width: 75vw;
+    border-radius: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.screen {
+     display: flex;
+    background-color: #121212;
+    height: 35vw;
+    width: 70vw;
+    border-radius: 10vw;
+    justify-content: center;
+    align-items: center;
+    color: #BBBBBB;
+    font-size: 30vw;
+    font-family: 'DS-Digital', monospace;
+}
+
+.btnAlarm{
+    position: absolute;
+  top: calc(50% - 23vw);
+  left: 30%;
+  background-color: #F50057;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 2vw;
+  display: flex;
+  justify-content: center;
+  color: #BBBBBB;
+  z-index: 5;
+  cursor: pointer;
+  border: none;
+  padding-top: 0.7vh;
+  font-size: 2vw;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btnHour{
+      position: absolute;
+  top: calc(50% - 22vw);
+  left: 50%;
+  background-color: #8a0332;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 2vw;
+  display: flex;
+  justify-content: center;
+  color: #BBBBBB;
+  z-index: 5;
+  cursor: pointer;
+  border: none;
+  font-size: 1.8vw;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btnMin{
+      position: absolute;
+  top: calc(50% - 22vw);
+  left: 70%;
+  background-color: #8a0332;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 2vw;
+  display: flex;
+  justify-content: center;
+  color: #BBBBBB;
+  z-index: 5;
+  cursor: pointer;
+  border: none;
+ font-size: 1.8vw;
+ font-family: 'Roboto', sans-serif;
+}
+
+.btnClear{
+         position: absolute;
+  top: calc(50% - 9vw);
+  left: 10%;
+  background-color: #F50057;
+  height: 5vw;
+  width: 5vw;
+  border-radius: 2vw;
+  display: flex;
+  justify-content: start;
+  color: #BBBBBB;
+  z-index: 5;
+  cursor: pointer;
+  border: none;
+ font-size: 1.8vw;
+ font-family: 'Roboto', sans-serif;
+ padding-top: 1.5vw;
+ padding-left: 1vw;
+}
+
+.btnAlarm,
+.btnHour,
+.btnMin {
+  transition: transform 0.2s;
+  transform: translateX(-50%);
+}
+
+.btnAlarm:hover,
+.btnHour:hover,
+.btnMin:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+
+.btnAlarm:active,
+.btnHour:active,
+.btnMin:active {
+  transform: translateX(-50%) scale(1.0) translateY(10px);
+}
+
+.btnClear{
+  transition: transform 0.2s;
+  transform: translateY(-50%);
+}
+
+.btnClear:hover{
+     transform: translateY(-50%) scale(1.1);
+}
+
+.btnClear:active{
+    transform: translateX(10px) scale(1.0) translateY(-50%);
+}
+
+#change {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  font-size: 5vw;
+  color: #F50057;
+  cursor: pointer;
+}
+
+.boxDark{
+    background-color: #E0E0E0;
+}
+
+.screenDark{
+    background-color: #F5F5F5;
+    color: #212121;
+}
+
+
+.btnClearDark{
+    background-color: #00E676;
+    color: #212121;
+}
+
+.btnAlarmDark{
+    background-color: #00E676;
+    color: #212121;
+}
+
+.btnHourDark{
+    background-color: #06a357;
+    color: #212121;
+}
+
+.btnMinDark{
+    background-color: #06a357;
+    color: #212121;
+}
+
+footer {
+    background-color: #2e2e2e;
+    color: #989795;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer a {
+    color: #989795;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #c5c5c4;
+}
