@@ -220,3 +220,66 @@ footer a {
 footer a:hover {
     color: #c5c5c4;
 }
+
+@media (max-width: 768px) {
+  .box {
+    height: 60vw;
+    width: 90vw;
+    border-radius: 8vw;
+  }
+
+  .screen {
+    height: 50vw;
+    width: 85vw;
+    font-size: 18vw;
+    border-radius: 6vw;
+  }
+
+  .btnAlarm,
+  .btnHour,
+  .btnMin {
+    height: 10vw;
+    width: 10vw;
+    font-size: 3vw;
+    border-radius: 2vw;
+  }
+
+  .btnAlarm {
+    top: calc(50% - 35vw);
+    left: 30%;
+  }
+
+  .btnHour {
+    top: calc(50% - 34vw);
+    left: 50%;
+  }
+
+  .btnMin {
+    top: calc(50% - 34vw);
+    left: 70%;
+  }
+
+  .btnClear {
+    position: absolute;
+    top: 50%;
+    left: calc(1vw); 
+    transform: translateY(-50%);
+    height: 8vw;
+    width: 8vw;
+    font-size: 3vw;
+    padding-top: 1.5vw;
+    padding-left: 1vw;
+    border-radius: 2vw;
+  }
+
+  #change {
+    font-size: 6vw;
+    top: 2vw;
+    right: 2vw;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
