@@ -95,7 +95,7 @@ function alarmActive() {
           initialTimeMin
         ).padStart(2, "0")}`;
         tick();
-      }, 6000);
+      }, 60000);
     } else {
         playAlarmSound()
       timer.innerHTML = "00:00";
