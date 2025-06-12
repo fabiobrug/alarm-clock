@@ -1,6 +1,7 @@
 // Select main DOM elements
 let box = document.querySelector(".box");
 let visor = document.querySelector(".screen");
+let clock = document.getElementById("clock") // could be used in future
 
 // Clock buttons
 let btnAlarm = document.getElementById("alarmButton");
@@ -152,3 +153,28 @@ change.addEventListener('click', () => {
 
   isMoon = !isMoon; // Toggle state
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Some music personalization in the future

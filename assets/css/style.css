@@ -168,6 +168,7 @@ html, body {
   font-size: 5vw;
   color: #F50057;
   cursor: pointer;
+  transition: color 0.6s ease;
 }
 
 .boxDark{
@@ -220,6 +221,15 @@ footer a {
 footer a:hover {
     color: #c5c5c4;
 }
+
+body,
+.box,
+.screen,
+.btnBase,
+.btnClear {
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
 
 @media (max-width: 768px) {
   .box {
@@ -283,3 +293,5 @@ footer a:hover {
     padding: 8px;
   }
 }
+
+
