@@ -30,7 +30,6 @@ Users can **set a custom time** and activate the alarm by clicking the "Alarm" b
 ## ⚠️ Known Limitations / In Progress
 
 - 🔕 Custom alarm sounds not yet supported  
-- 🎨 Theme toggle affects colors only (no animation yet)  
 - 🧠 Future ideas: drag-to-set time, animations, persistence via local storage
 
 ---
