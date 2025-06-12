@@ -24,8 +24,7 @@ Users can **set a custom time** and activate the alarm by clicking the "Alarm" b
 - ✅ Start/reset alarm logic  
 - ✅ Alarm trigger with sound and visual highlight  
 - ✅ Light/Dark mode toggle  
-  
-
+- ✅ Responsive
 ---
 
 ## ⚠️ Known Limitations / In Progress
@@ -33,7 +32,6 @@ Users can **set a custom time** and activate the alarm by clicking the "Alarm" b
 - 🔕 Custom alarm sounds not yet supported  
 - 🎨 Theme toggle affects colors only (no animation yet)  
 - 🧠 Future ideas: drag-to-set time, animations, persistence via local storage
-- ⚠️ Mobile may not work as expected
 
 ---
 
